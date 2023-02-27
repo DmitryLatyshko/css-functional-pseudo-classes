@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Css Funcional pseudo-classes</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='example-1.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='example-2.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='example-3.css'>
+</head>
+<body>
+	<section class="is">
+		<h2><code>:is()</code></h2>
+		<p>This pseudo-class allows us to simplify grouping of selectors.</p>
+		<div class="example-1">
+			<h3>An example</h3>
+			<p>Lorem ipsum dolor, <a class="1a link" href="#">sit amet consectetur adipisicing elit</a>. Nisi repellendus ex labore illum quo. Explicabo tempore minima id, itaque temporibus, suscipit porro natus, non esse quibusdam mollitia corrupti possimus vel!</p>
+			<h4>Dolor sit amet</h4>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic ab a nostrum accusamus fugiat explicabo iure fuga architecto nobis eius molestias animi harum, error pariatur nulla nihil assumenda quo.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi fuga ex nulla velit adipisci reiciendis quibusdam perferendis impedit enim quod placeat obcaecati, atque eius ipsa cupiditate, similique doloremque vero.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, tempore praesentium. Eaque, quia? Molestias quae alias, dolores facere sequi ad a eveniet iusto nam impedit hic consequatur quo, quaerat esse!</p>
+		</div>
+	</section>
+	<section class="where">
+		<h2><code>:where()</code></h2>
+		<p>This pseudo-class is almost the same as :is().</p>
+		<div class="example-2">
+			<h3>An example</h3>
+			<p>Lorem ipsum dolor, <a id="link" href="#">sit amet consectetur adipisicing elit</a>. Nisi repellendus ex labore illum quo. Explicabo tempore minima id, itaque temporibus, suscipit porro natus, non esse quibusdam mollitia corrupti possimus vel!</p>
+			<h4>Dolor sit amet</h4>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis hic ab a nostrum accusamus fugiat explicabo iure fuga architecto nobis eius molestias animi harum, error pariatur nulla nihil assumenda quo.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eligendi fuga ex nulla velit adipisci reiciendis quibusdam perferendis impedit enim quod placeat obcaecati, atque eius ipsa cupiditate, similique doloremque vero.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, tempore praesentium. Eaque, quia? Molestias quae alias, dolores facere sequi ad a eveniet iusto nam impedit hic consequatur quo, quaerat esse!</p>
+		</div>
+	</section>
+	<section class="has">
+		<h2><code>:has()</code></h2>
+		<p>This pseudo-class is a game changer.</p>
+		<p>People had long been asking for a parent selector, and while this can do that, is also can do a lot more.</p>
+		<p>There are other useful ones as well trough, suck as:</p>
+		<div class="grid">
+			<div class="example-3">
+				<h3>Dolor sit amet.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda corporis dignissimos magni nemo quis. Adipisci, alias architecto culpa dicta doloribus eaque fuga ipsum iste laudantium molestias, repudiandae sed, temporibus?</p>
+				<img class="first-img" src="https://picsum.photos/200/300?1" alt="https://picsum.photos/200/300">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, tempore praesentium. Eaque, quia? Molestias quae alias, dolores facere sequi ad a eveniet iusto nam impedit hic consequatur quo, quaerat esse!</p>
+			</div>
+			<div class="example-3">
+				<h3>Dolor sit amet.</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi repellendus ex labore illum quo. Explicabo tempore minima id, itaque temporibus, suscipit porro natus, non esse quibusdam mollitia corrupti possimus vel!</p>
+				<p>Lorem ipsum dolor, <a href="#">sit amet consectetur adipisicing elit</a>. Nisi repellendus ex labore illum quo. Explicabo tempore minima id, itaque temporibus, suscipit porro natus, non esse quibusdam mollitia corrupti possimus vel!</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

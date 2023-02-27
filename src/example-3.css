@@ -1,0 +1,19 @@
+﻿.has {
+	display: none;
+}
+
+/*
+.example-3:has(img) {
+	background-color: #8abd54;
+}
+
+.example-3 img {
+	border: 2px solid black;
+}
+*/
+
+/*
+.example-3:has(a) :is(h3, p) {
+	background-color: #265301;
+}
+*/
